@@ -1,0 +1,23 @@
+{
+  "name": "resume-using-bootstrap3",
+  "version": "1.0.0",
+  "description": "Demo Web Site for Resume using Bootstrap 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nquates/resume-using-bootstrap3.git"
+  },
+  "keywords": [
+    "resume",
+    "bootstrap"
+  ],
+  "author": "Norman Quates",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nquates/resume-using-bootstrap3/issues"
+  },
+  "homepage": "https://github.com/nquates/resume-using-bootstrap3#readme"
+}
