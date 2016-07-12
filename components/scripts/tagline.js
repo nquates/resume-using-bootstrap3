@@ -1,6 +1,6 @@
 var $, fill;
 
-$ = require('jquery');
+$ = require('jquery', 'bootstrap');
 
 (fill = function(item) {
   return $('.tagline').append("" + item);

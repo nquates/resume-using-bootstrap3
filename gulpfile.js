@@ -7,13 +7,15 @@ var gulp = require('gulp')
     
 var  coffeeSrcs
 	,jsSrcs
-	,htmlSrcs;
+	,htmlSrcs
+	,styleSrcs;
 
 coffeeSrcs = ['components/coffee/*.coffee'];
 jsSrcs = [
-	'components/scripts/tagline.js'
+	'components/scripts/*.js'
 ];
 htmlSrcs = ['builds/development/*.html'];
+styleSrcs = ['builds/development/*.css'];
 
 gulp.task('log',function(){
 	logutil.log('Test of the gulp log message');
@@ -40,10 +42,16 @@ gulp.task('html', function(){
 		.pipe(connect.reload())
 });
 
+gulp.task('style', function(){
+	gulp.src(styleSrcs)
+		.pipe(connect.reload())
+});
+
 gulp.task('watch',function(){
 	gulp.watch(coffeeSrcs,['coffee']);
 	gulp.watch(jsSrcs,['js']);
 	gulp.watch(htmlSrcs,['html']);
+	gulp.watch(styleSrcs,['style']);
 });
 
 gulp.task('connect',function(){
@@ -54,5 +62,5 @@ gulp.task('connect',function(){
 	})
 });
 
-gulp.task('default',['html','coffee','js','connect','watch']);
+gulp.task('default',['html','style','coffee','js','connect','watch']);
 
