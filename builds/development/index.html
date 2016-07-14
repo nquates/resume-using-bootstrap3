@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
  </head>
  
@@ -21,9 +21,9 @@
 			<div class="visible-lg-inline visible-md-inline visible-sm-inline">
 				<h2>&nbsp;</h2>
 			</div>
-			<h5>119 Fairway Dr. Covington, La 70433<br/>
-				nquates@gmail.com<br/>
-				985-502-4161</h5>
+			<address>119 Fairway Dr. Covington, La 70433<br/>
+				<a href="mailto:#">nquates@gmail.com</a><br/>
+				985-502-4161</address>
 			</div><!-- col -->
 		</div><!-- row -->
 		<div class="row">
@@ -68,10 +68,28 @@
 									</ul>	
 								<li>Setup procedures and standards that, when adhered to, make the workflow fast, accountable and reliable.</li>
 								<li>Major Projects
-									<ul>
-										<li><abbr title="PEC Safety">PEC</abbr>: Standard Safety Questionnaire (SSQ):
+									<div class="panel-group" id="edata_projects">
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="edata_projects_heading_one">
+												<h4 class="panel-title">
+													<a href="#edata_projects_one" role="button"
+														data-toggle="collapse" data-parent="edata_projects" ariaexpanded="false"
+														ariacontrols="edata_projects_one">
+														<abbr title="PEC Safety">PEC</abbr>: Standard Safety Questionnaire (SSQ):
+													<span class="caret"></span>
+													</a>
+												</h4>
+											</div><!-- panel-heading -->
+											<div class="panel-collapse collapse " id="edata_projects_one" role="tabpanel" arialabeledby="edata_projects_heading_one">
+												<div class="panel-body">
+													<p>Online Web Application/SQL Server: where "Oil and Gas" operators and contractors share safety, health, and environmental statistics and policies with current data entered regularly by over 22K contractors.</p>
+												</div><!-- panel-body -->
+											</div><!-- panel-collapse collapse in -->
+										</div><!-- panel panel-default -->	
+									</div><!-- panel-group edata projects -->
+<!--
 											<ul>
-												<li>Online Web Application/SQL Server: where "Oil and Gas" operators and contractors share safety, health, and environmental statistics and policies with current data entered regularly by over 22K contractors.</li>
+												
 											</ul>
 										</li>
 											<li><abbr title="PEC Safety">PEC</abbr>: Training Tracker:
@@ -90,6 +108,7 @@
 											</ul>
 										</li>
 									</ul>
+									-->
 								</li>
 							</ul>
 						<li>Senior Developer (1999 - 2004) Antares Technology Solutions
@@ -109,7 +128,8 @@
 		</section>
 	</div><!-- row -->
 </div>
- 
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
  <script src="js/script.js"></script>
  </body>
  </html>
