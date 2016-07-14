@@ -1,0 +1,13 @@
+body{
+	font-family: arial;
+}
+.bgimage{
+	background-image: url('../images/tchfunctesunset.jpg') ;
+	background-position: center center;
+	background-size: cover;
+	min-height: 210px;
+}	
+	
+.bgtextcolor{
+	color:white;
+}
