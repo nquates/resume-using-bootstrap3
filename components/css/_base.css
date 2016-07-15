@@ -25,3 +25,7 @@ header address a {
 	border:none;
 	box-shadow:none;
 }
+
+#edata_projects a {
+	text-decoration: none;
+}
