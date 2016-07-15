@@ -26,6 +26,10 @@ header address a {
 	box-shadow:none;
 }
 
-#edata_projects a {
-	text-decoration: none;
+.accordian-control {
+	
+}
+
+.logoThumbnail {
+	max-width: 225px; 
 }
