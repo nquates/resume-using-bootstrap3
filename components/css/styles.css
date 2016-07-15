@@ -37,3 +37,8 @@ header address a {
 .logoThumbnail {
   max-width: 225px;
 }
+
+.panel-title > .intentionalHL {
+  color: blue;
+  text-decoration: underline;
+}
