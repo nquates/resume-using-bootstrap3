@@ -32,13 +32,43 @@ header address a {
   box-shadow: none;
 }
 
-
+a.accordian-control.collapsed {
+  color: #337ab7;
+  text-decoration: none;
+}
 
 .logoThumbnail {
   max-width: 225px;
 }
 
 .panel-title > .intentionalHL {
-  color: blue;
+  color: #337ab7;
   text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  div.othIndus {
+    width: 65%;
+  }
+
+  img.othIndus {
+    width: 99%;
+  }
+}
+
+@media (min-width: < 768px) {
+  img.othIndus {
+    width: auto;
+  }
+}
+
+@media (min-width: >992px) {
+  img.othIndus {
+    width: auto;
+  }
+}
+
+#panel_edata_heading,
+#panel_antares_heading {
+  background-color: transparent;
 }
