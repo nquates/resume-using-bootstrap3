@@ -72,3 +72,8 @@ a.accordian-control.collapsed {
 #panel_antares_heading {
   background-color: transparent;
 }
+
+.certifications {
+  border: 1px dotted #ddd;
+  padding: 5px;
+}
