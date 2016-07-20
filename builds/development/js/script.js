@@ -1,29 +1,39 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+/*when the brand is visible use it to toggle visibility of the menu items by clicking the hamburger*/
 $ = require('jquery');
 $( "#brand" ).click(function() {
   $( "#hamburger" ).click();
 });
 
-// $('.navbar-collapse ul li a').click(function(){ 
-//             $( "#hamburger" ).click();
-// });
+/* when the navbar is using the hamberger icon collapse after each use.*/
 $(function () { 
         $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function () { 
                 $('.navbar-toggle:visible').click(); 
         }); 
 });
+
+/*simulate clicking  of the toggle buttons for edata and antares experience*/
 $( "#edatadetails,#antaresdetails" ).click(function(e){
+	e.preventDefault();
 	var target = this.hash;
     var $target = $(target);
     $('html, body').stop().animate({
 		'scrollTop': ($target.offset().top)-100
 	},1000);
-	
-	$( "#hamburger" ).click();
-	
-	return true;
-});
-
+	var subtarget = $target[0].hash;
+	var $subtarget = $(subtarget);
+	if ($subtarget.hasClass('in')){
+		$subtarget.removeClass('in');	
+		$subtarget.removeAttr('style');
+		$subtarget.attr('style','height;0px;');
+	}
+	else{
+		$subtarget.addClass('in');
+		$subtarget.removeAttr('style');
+	}
+	$target.click();
+ 	return true;
+ });
 
 var $, fill;
 
