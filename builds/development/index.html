@@ -18,57 +18,60 @@
 	 	data-spy="affix"
 	 	data-offset-top="170">
 	 	<div class="container">
-	 	<div class="navbar-header">
-	      	<button id="hamburger" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarcollapsed" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-    	  	</button>
-      		<div class="visible-xs-inline">
-				<a class="navbar-brand" href="#"  id="brand">Norman Quates</a>
-			</div>
-	    </div>
-	    <div class="collapse navbar-collapse" id="navbarcollapsed">
-			<ul class="nav navbar-nav">
-				<li><a href="#top">Objectives<span class="caret"></span></a></li>
-				<li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
-		          	aria-haspopup="true" 
-		          	aria-expanded="false">Experience<span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li class="dropdown-header">Software Related</li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="#edata_experience_toggle" id="edatadetails">Edata Axcess: details</a></li>
-		            <li><a href="#antares_experience_toggle" id="antaresdetails">Antares: details</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li class="dropdown-header">Other Industries</li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="#finance_toggle" id="finance_details">Finance</a></li>
-		            <li><a href="#accounting_toggle" id="accounting_details">Accounting</a></li>
-		            <li><a href="#oilgas_toggle" id="oilgas_details">Oil &amp; Gas</a></li>
-
-		            
-		          </ul>
-		        </li>
-				<li class="dropdown">
-		          <a href="#" class="dropdown-toggle" 
-		          	data-toggle="dropdown" 
-		          	role="button" 
-		          	aria-haspopup="true" 
-		          	aria-expanded="false">Knowledge<span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="#education">Education</a></li>
-		            <li><a href="#certs">Certifications</a></li>
-		            <li><a href="#pats">Patents</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="#training">Recent Training</a></li>
-		          </ul>
-		        </li>
-				<li><a href="#skills">Skills<span class="caret"></span></a></li>
-				<li><a href="#orgs">Organizations &amp; Hobbies<span class="caret"></span></a></li>
-			</ul>
-	    </div>
+		 	<div class="navbar-header">
+		      	<button id="hamburger" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarcollapsed" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+	    	  	</button>
+	      		<div class="visible-xs-inline">
+					<a class="navbar-brand" href="#"  id="brand">Norman Quates</a>
+				</div>
+		    </div>
+		    <div class="collapse navbar-collapse" id="navbarcollapsed">
+				<ul class="nav navbar-nav">
+					<li><a href="#top" id="objectivesMI">Objectives<span class="caret"></span></a></li>
+					<li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+			          	aria-haspopup="true" 
+			          	aria-expanded="false">Experience<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li class="dropdown-header">Software Related</li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#edata_experience_toggle" id="edatadetails">Edata Axcess: details</a></li>
+			            <li><a href="#antares_experience_toggle" id="antaresdetails">Antares: details</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li class="dropdown-header">Other Industries</li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#finance_toggle" id="finance_details">Finance</a></li>
+			            <li><a href="#accounting_toggle" id="accounting_details">Accounting</a></li>
+			            <li><a href="#oilgas_toggle" id="oilgas_details">Oil &amp; Gas</a></li>
+			          </ul>
+			        </li>
+					<li class="dropdown">
+			          <a href="#" class="dropdown-toggle" 
+			          	data-toggle="dropdown" 
+			          	role="button" 
+			          	aria-haspopup="true" 
+			          	aria-expanded="false">Knowledge<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#education">Education</a></li>
+			            <li><a href="#certs">Certifications</a></li>
+			            <li><a href="#pats">Patents</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#training">Recent Training</a></li>
+			          </ul>
+			        </li>
+					<li><a href="#skills" id="skillsMI">Skills<span class="caret"></span></a></li>
+					<li><a href="#orgs" id="orgsMI">Organizations &amp; Hobbies<span class="caret"></span></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#"  data-toggle="modal" data-target="#aboutSite">About...</a>
+					</li>
+				</ul>
+		    </div>
 	    </div>
 	 </nav>
  
@@ -123,19 +126,29 @@
 												<img src="images/EdataLogoThumb.png" class="" alt="Edata Logo">
 											</div>
 											<div class="col-sm-7">
-												<p>Edata Axcess LLC specializes in: Custom Software, Database Design and Analysis, IT consulting, Data Security and Network Design, Web Application Hosting.</p>Owner / Manager: (2004 - present)
-												<div class="visible-lg-inline visible-md-inline visible-sm-inline">&nbsp;</div>
-												<a href="#edata_experience" 
-													 role="button"
-													 class="btn btn-default btn-xs accordian-control"
-													 data-toggle="collapse"
-													 data-parent="#softwareRelated"
-													 aria-expanded="false"
-													 aria-controls="edata_experience"
-													 id="edata_experience_toggle">
-													 
-													<span class="caret"></span>
-												 </a>
+												<p>Edata Axcess LLC specializes in: Custom Software, Database Design and Analysis, IT consulting, Data Security and Network Design, Web Application Hosting.
+												</p>
+												<div class="container">
+													<div class="row">
+														<div class="col-xs-6 col-sm-5 col-md-4">
+															Owner / Manager: (2004 - present)
+															<!-- <div class="visible-lg-inline visible-md-inline visible-sm-inline">&nbsp;</div> -->
+														</div>
+														<div class="col-xs-3 col-sm-1 col-md-1">	
+															<a href="#edata_experience" 
+																 role="button"
+																 class="btn btn-default btn-sm accordian-control"
+																 data-toggle="collapse"
+																 data-parent="#softwareRelated"
+																 aria-expanded="false"
+																 aria-controls="edata_experience"
+																 id="edata_experience_toggle">
+																<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 
+																
+															 </a>
+														 </div>
+													 </div><!-- row -->
+												 </div><!-- container -->
 											 </div>
 										 </div>
 									 </div>
@@ -173,10 +186,10 @@
 											<div class="panel-heading" role="tab" id="full_stack_heading">
 												<h4 class="panel-title">True "full stack" Development:
 													<a href="#full_stack_one" role="button" 
-														class="btn btn-default btn-xs accordian-control"
+														class="btn btn-default btn-sm accordian-control"
 														data-toggle="collapse" data-parent="#edataBullets" ariaexpanded="false"
 														ariacontrols="full_stack_one">
-													<span class="caret"></span>
+													<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
 													</a>
 												</h4>
 											</div><!-- panel-heading -->
@@ -208,11 +221,11 @@
 												<h4 class="panel-title">
 													Major Projects:
 													<a href="#major_projects_one" role="button"
-														class="btn btn-default btn-xs accordian-control"
+														class="btn btn-default btn-sm accordian-control"
 														data-toggle="collapse" 
 														data-parent="#edataBullets" ariaexpanded="false"
 														ariacontrols="major_projects_one">
-													<span class="caret"></span>
+													<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
 													</a>
 												</h4>
 											</div><!-- panel-heading -->
@@ -308,21 +321,28 @@
 												<img src="images/AntaresLogoThumb.png" class="logoThumbnail" alt="Antares Logo">
 											</div>
 											<div class="col-sm-7">
-												<p>Antares Technology Solutions: Software Development and consulting company based in Baton Rouge LA.</p>
-												Senior Developer: (1999 - 2004)
-												<div class="visible-lg-inline visible-md-inline visible-sm-inline">&nbsp;</div>
-												<a href="#antares_experience" 
-													 role="button"
-													 class="btn btn-default btn-xs accordian-control"
-													 data-toggle="collapse"
-													 data-parent="#softwareRelated"
-													 aria-expanded="false"
-													 aria-controls="antares_experience"
-													 id="antares_experience_toggle"
-													 >
-													  
-													<span class="caret"></span>
-												 </a>
+												<p>Antares Technology Solutions: Software Development and consulting company based in Baton Rouge LA.
+												</p>
+												<div class="container">
+													<div class="row">
+														<div class="col-xs-6 col-sm-5 col-md-4">
+															Senior Developer: (1999 - 2004)
+															<!-- <div class="visible-lg-inline visible-md-inline visible-sm-inline">&nbsp;</div> -->
+														</div>
+														<div class="col-xs-3 col-sm-1 col-md-1">
+															<a href="#antares_experience" 
+																 role="button"
+																 class="btn btn-default btn-sm accordian-control"
+																 data-toggle="collapse"
+																 data-parent="#softwareRelated"
+																 aria-expanded="false"
+																 aria-controls="antares_experience"
+																 id="antares_experience_toggle">
+																 <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+															 </a>
+														 </div>
+													 </div><!-- row -->
+												 </div><!-- container -->
 											 </div>
 										 </div><!-- row -->
 									 </div><!-- container -->
@@ -336,12 +356,12 @@
 												<h4 class="panel-title">Major Projects
 													<a href="#collapsed_target_major_projects" 
 														 role="button"
-														 class="btn btn-default btn-xs accordian-control"
+														 class="btn btn-default btn-sm accordian-control"
 														 data-toggle="collapse"
 														 data-parent="#parentGroupMajorProjects" 
 														 aria-expanded="false"
 														 aria-controls="collapsed_target_major_projects">
-														<span class="caret"></span>
+														<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
 													 </a>
 												</h4><!--  end of panel-title -->
 											</div><!--  end of panel_major_projects_heading -->
@@ -610,21 +630,16 @@
 							</div><!--  end of collapsed collapsed_target_oilgas -->
 						</div><!--  end of panel_default_oilgas -->
 					</div><!-- " end of panel-group panel_group_other_ind" -->
-
-				
 			</ul>
-
-
-				
 		</section>
 	</div><!-- row -->
 	<div class="row">
 		<section class="col-xs-12">
-		<h1 id="education">Education, Certifications, Patents</h1>
+		<h1 id="education">Education, Certifications, Patents, Training</h1>
 		<div class="container">
 			<div class="row certifications">
 				<div class="col-sm-3">
-					<img src="images/uno.png" alt="UNO LOGO">
+					<img class="img-responsive" src="images/uno.png" alt="UNO LOGO">
 					
 				</div>
 				<div class="col-sm-8"><h4>University of New Orleans</h4>
@@ -635,7 +650,7 @@
 			
 			<div class="row certifications" id="certs">
 				<div class="col-sm-3">
-					<img src="images/nsu.png" alt="NSU logo">
+					<img class="img-responsive" src="images/nsu.png" alt="NSU logo">
 				</div>
 				<div class="col-sm-8"><h4>Nicholls State University</h4>
 					NSU campus Thibodaux, Louisiana.
@@ -644,7 +659,7 @@
 			</div>
 			<div class="row certifications" id="pats">
 				<div class="col-sm-3">
-					<img src="images/CPAcert.png" alt="cpa certificate">
+					<img class="img-responsive" src="images/CPAcert.png" alt="cpa certificate">
 				</div>
 				<div class="col-sm-8">
 					<h4>Certified Public Accountant</h4>
@@ -653,8 +668,7 @@
 			</div>
 			<div class="row certifications">
 				<div class="col-sm-3">
-				<img src="images/MS_Cert_Professional_logo.png" alt="MCP logo">
-					
+					<img class="img-responsive" src="images/MS_Cert_Professional_logo.png" alt="MCP logo">
 				</div>
 				<div class="col-sm-8"><h4>Microsoft Certified Professional</h4>
 					MCP issued in 2005 for Developing and Implementing Web Applications with Microsoft Visual C#™ .NET and Microsoft Visual Studio .NET
@@ -662,12 +676,12 @@
 			</div>
 			<div class="row certifications" id="training">
 				<div class="col-sm-3">
-					<img  src="images/patent.png" alt="patent image">
+					<img class="img-responsive" src="images/patent.png" alt="patent image">
 				</div>
 				<div class="col-sm-8">
-					<h4>United States Patent 4511291</h4>
+					<h4>United States Patent</h4>
 					 Received US patent for a device that is used to fill bulk abrasive blasting pressure vessels by temporarily converting the pressure vessel into a vacuum system. Information on the patent can be found at google patent site: 
-					 <a href="http://www.google.com/patents/US4511291" target="_blank" title="Norman Quates Patent 4511291 Vacuum Material conveying apparatus">www.google.com/patents/US4511291</a>
+					 <a href="http://www.google.com/patents/US4511291" target="_blank" title="Norman Quates Patent Vacuum Material conveying apparatus">www.google.com/patents/US4511291</a>
 				</div>
 			</div>
 			<div class="row certifications" id="training">
@@ -754,10 +768,56 @@
 				<li>
 					<h4>Camping</h4>
 				</li>
+				<li>
+					<h4>
+						Weather Tracking	
+					</h4>
+				</li>
 			</ul>	
 		</section>
 	</div>
 </div>
+<div class="modal fade" id="aboutSite"
+  tabindex="-1" aria-labeledby="aboutSiteLabel" 
+  role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close"
+				  data-dismiss="modal"
+				  aria-label="close">
+				  <span aria-hidden="true">&times;</span>
+				  </button>
+				<h3 class="modal-title" id="aboutSiteLabel">About This Site</h3>	  
+			</div><!-- modal-header -->	
+			<div class="modal-body">
+			<p>
+				I created this site as a both a resume and a demonstration of the features of bootstrap 3. 
+			</p>
+			<p>
+				I put more <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> items in this site than I would normally put in a resume so readers can see how a simple one page site can show summary information, but also quickly show detailed information on any aspect of interest.  
+			</p>
+			<p>
+			Everything in this site is accurate. Please send me an email on linkedIn with comments as this is my first resume since 1999.  I will have this on gitHub as well and would welcome comments on my web techniques also.
+			</p>
+			<p>
+				This site is very responsive to different browser environments and was created with a mobile first strategy.  I will be making another similar site incorporating angularJS and will add a link when that site is ready.  
+			</p>
+			<p>
+				The Edata Web site: <a href="http://www.edaxc.com/" class="intentionalHL" target="_blank" title="Edata Axcess LLC">www.edaxc.com</a> was done quite a few years back. It has a lot of "neat gadgets" using jQueryUI but was not done with a mobile first strategy and is not very responsive when viewed on a mobile phone.
+			</p>
+			<p>
+				I used mainly CSS3 Flex Boxes for the <a href="http://www.edaxc.com/TestWindGauge/default.aspx" class="intentionalHL" target="_blank">Edata Weather Site</a>, another hobby, I used graphics and some Telerik tools to read live JSON data files that I create from data I get from weather equipment located on the premises. The gauges and readings are updated in two minute intervals. The radar images are obtained from a program called Storm Predator but I am using my own technique to animate the images so I can remove problem images.  
+			</p>
+
+			</div><!-- modal-body -->
+			<div class="modal-footer">
+				<button class="btn btn-default" type="button"
+					data-dismiss="modal">Close</button>
+			</div>
+		</div><!-- modal-content -->
+	</div><!-- modal-dialog -->
+</div><!-- modal#aboutSite -->
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
  <script src="js/script.js"></script>

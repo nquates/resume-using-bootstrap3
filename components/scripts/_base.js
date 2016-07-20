@@ -11,6 +11,23 @@ $(function () {
         }); 
 });
 
+$('#objectivesMI').click(function(e){
+	e.preventDefault();
+	var target = this.hash;
+    var $target = $(target);
+    $('html, body').stop().animate({
+		'scrollTop': 0
+	},1000);
+});
+
+$('#skillsMI,#orgsMI').click(function(e){
+	e.preventDefault();
+	var target = this.hash;
+    var $target = $(target);
+    $('html, body').stop().animate({
+		'scrollTop': ($target.offset().top)-100
+	},1000);
+});
 
 $( "#edatadetails,#antaresdetails,#finance_details,#accounting_details,#oilgas_details" ).click(function(e){
 	e.preventDefault();
