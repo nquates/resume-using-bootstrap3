@@ -11,9 +11,27 @@ $(function () {
         }); 
 });
 
-/*simulate clicking  of the toggle buttons for edata and antares experience*/
-$( "#edatadetails,#antaresdetails" ).click(function(e){
+
+$( "#edatadetails,#antaresdetails,#finance_details,#accounting_details,#oilgas_details" ).click(function(e){
 	e.preventDefault();
+	/*go through the list and collapse all of the other acordins*/
+	var targetList = ['#edatadetails','#antaresdetails','#finance_details','#accounting_details','#oilgas_details'];
+	for (var i = targetList.length - 1; i >= 0; i--) {
+		var starget = targetList[i];
+		var $starget = $(starget);
+		if ($starget[0].id != this.id){
+			var rmTarget = $starget[0].hash;
+			var $rmTarget = $(rmTarget);
+			var subRmTarget = $rmTarget[0].hash;
+			var $subRmTarget = $(subRmTarget); 
+			if ($subRmTarget.hasClass('in')){
+				$subRmTarget.removeClass('in');	
+				$subRmTarget.removeAttr('style');
+				$subRmTarget.attr('style','height;0px;');
+			}
+		}
+	}
+	/*now smoothly scrool down to selected target and toggle the acordion */
 	var target = this.hash;
     var $target = $(target);
     $('html, body').stop().animate({
@@ -21,15 +39,8 @@ $( "#edatadetails,#antaresdetails" ).click(function(e){
 	},1000);
 	var subtarget = $target[0].hash;
 	var $subtarget = $(subtarget);
-	if ($subtarget.hasClass('in')){
-		$subtarget.removeClass('in');	
-		$subtarget.removeAttr('style');
-		$subtarget.attr('style','height;0px;');
-	}
-	else{
-		$subtarget.addClass('in');
-		$subtarget.removeAttr('style');
-	}
+	$subtarget.addClass('in');
+	$subtarget.removeAttr('style');
 	$target.click();
- 	return true;
+	return true;
  });
