@@ -2,6 +2,15 @@ body {
   font-family: arial;
 }
 
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-default {
+  width: 100%;
+  z-index: 1000;
+}
+
 .bgimage {
   background-image: url("../images/tchfunctesunset.jpg");
   background-position: center center;

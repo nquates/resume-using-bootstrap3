@@ -9,8 +9,66 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
  </head>
  
- <body id="home">
- <header class="bgimage">
+<body id="home" 
+		data-spy="scroll"
+		data-target=".navbar-default"
+		data-offset="100">
+<header class="bgimage">		
+	 <nav class="navbar navbar-default"
+	 	data-spy="affix"
+	 	data-offset-top="170">
+	 	<div class="container">
+	 	<div class="navbar-header">
+	      	<button id="hamburger" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarcollapsed" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+    	  	</button>
+      		<div class="visible-xs-inline">
+				<a class="navbar-brand" href="#"  id="brand">Norman Quates</a>
+			</div>
+	    </div>
+	    <div class="collapse navbar-collapse" id="navbarcollapsed">
+			<ul class="nav navbar-nav">
+				<li><a href="#objectives">Objectives<span class="caret"></span></a></li>
+				<li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+		          	aria-haspopup="true" 
+		          	aria-expanded="false">Experience<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li class="dropdown-header">Software Related</li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#edata_experience_toggle" id="edatadetails">Edata Axcess: details</a></li>
+		            <li><a href="#antares_experience_toggle" id="antaresdetails">Antares: details</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li class="dropdown-header">Other Industries</li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		            
+		          </ul>
+		        </li>
+				<li class="dropdown">
+		          <a href="#" class="dropdown-toggle" 
+		          	data-toggle="dropdown" 
+		          	role="button" 
+		          	aria-haspopup="true" 
+		          	aria-expanded="false">Knowledge<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#education">Education</a></li>
+		            <li><a href="#certs">Certifications</a></li>
+		            <li><a href="#pats">Patents</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#training">Recent Training</a></li>
+		          </ul>
+		        </li>
+				<li><a href="#skills">Skills<span class="caret"></span></a></li>
+				<li><a href="#orgs">Organizations &amp; Hobbies<span class="caret"></span></a></li>
+			</ul>
+	    </div>
+	    </div>
+	 </nav>
+ 
 	<div class="container bgtextcolor">
 		<div class="row">
 			<div class="col-sm-6 col-xs-12">
@@ -41,13 +99,13 @@
  <div class="container">
 	<div class="row">
 		<section class="col-xs-12">
-			<h1>Objectives</h1>
+			<h1 id="objectives">Objectives</h1>
 			<blockquote>Seeking local senior management position with a company to manage its information resources (personnel, etc.) where I can use my experience to make that company run more efficient, while making its “online” presence effective, reliable and easy to use.  <br/><br/>Alternatively, looking to work with an organization looking to take control of laborious and time-consuming tasks by doing its own programming and web development or by bringing those tasks in-house.</blockquote>
 		</section>
 	</div><!-- row -->
 	<div class="row">
 		<section class="col-xs-12">
-			<h1>Experience</h1>
+			<h1 id="experience">Experience</h1>
 			<ul>
 				<li class="h3">Software Related</li>
 					
@@ -70,7 +128,8 @@
 													 data-toggle="collapse"
 													 data-parent="#softwareRelated"
 													 aria-expanded="false"
-													 aria-controls="edata_experience">
+													 aria-controls="edata_experience"
+													 id="edata_experience_toggle">
 													 
 													<span class="caret"></span>
 												 </a>
@@ -255,7 +314,9 @@
 													 data-toggle="collapse"
 													 data-parent="#softwareRelated"
 													 aria-expanded="false"
-													 aria-controls="antares_experience">
+													 aria-controls="antares_experience"
+													 id="antares_experience_toggle"
+													 >
 													  
 													<span class="caret"></span>
 												 </a>
@@ -528,7 +589,7 @@
 	</div><!-- row -->
 	<div class="row">
 		<section class="col-xs-12">
-		<h1>Education, Certifications, Patents</h1>
+		<h1 id="education">Education, Certifications, Patents</h1>
 		<div class="container">
 			<div class="row certifications">
 				<div class="col-sm-3">
@@ -541,7 +602,7 @@
 				</div>
 			</div>
 			
-			<div class="row certifications">
+			<div class="row certifications" id="certs">
 				<div class="col-sm-3">
 					<img src="images/nsu.png" alt="NSU logo">
 				</div>
@@ -550,7 +611,7 @@
 					<br/>1979 Associate's degree in Business Administration
 				</div>
 			</div>
-			<div class="row certifications">
+			<div class="row certifications" id="pats">
 				<div class="col-sm-3">
 					<img src="images/CPAcert.png" alt="cpa certificate">
 				</div>
@@ -568,9 +629,9 @@
 					MCP issued in 2005 for Developing and Implementing Web Applications with Microsoft Visual C#™ .NET and Microsoft Visual Studio .NET
 				</div>
 			</div>
-			<div class="row certifications">
+			<div class="row certifications" id="training">
 				<div class="col-sm-3">
-					<img src="images/patent.png" alt="patent image">
+					<img  src="images/patent.png" alt="patent image">
 				</div>
 				<div class="col-sm-8">
 					<h4>United States Patent 4511291</h4>
@@ -578,7 +639,7 @@
 					 <a href="http://www.google.com/patents/US4511291" target="_blank" title="Norman Quates Patent 4511291 Vacuum Material conveying apparatus">www.google.com/patents/US4511291</a>
 				</div>
 			</div>
-			<div class="row certifications">
+			<div class="row certifications" id="training">
 				<div class="col-sm-3">
 					<h4>Recent Training Certificates</h4>
 				</div>
@@ -591,23 +652,79 @@
 	</div>
 	<div class="row">
 	<section class="col-xs-12">
-		<h1>Skills</h1>
+		<h1 id="skills">Skills</h1>
 			<div class="row">
 				<div class="col-xs-1">
 					&nbsp;
 				</div>
 				<div class="col-xs-11">
 					<ul class="list-inline">
-						<li><h4>Software</h4></li>
-						<li>Business Management</li>
-						<li>Accounting</li>
-						<li>Project Management</li>
-						<li>Process Management</li>
+						<li><h4><span class="glyphicon glyphicon-ok"></span> Software</h4></li>
+						<li><h4><span class="glyphicon glyphicon-ok"></span> Business Management</h4></li>
+						<li><h4><span class="glyphicon glyphicon-ok"></span> Accounting</h4></li>
+						<li><h4><span class="glyphicon glyphicon-ok"></span> Project Management</h4></li>
+						<li><h4><span class="glyphicon glyphicon-ok"></span> Reporting</h4></li>
 					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-1">
+				</div>
+				<div class="col-xs-11">
+					<h3>Software Skill levels:</h3>
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Level</th>
+								<th>Language / Environment / Framework Skills</th>
+								<th>Tools / IDE / Source Control</th>
+							</tr>
+						</thead>
+						<tr>
+							<td>Expert</td>
+							<td>C#, .NET, SQL Server, Web Application Design, CSS, JavaScript, Building custom Analytical and Reporting Tools </td>
+							<td>Visual Studio, TFS, Photoshop, InDesign</td>
+						</tr>
+						<tr>
+							<td>Extensive Knowledge</td>
+							<td>Ajax, Bootstrap, jQuery, jQueryUI, UI/UX design, WCF Web Services, Multi-threaded Windows Services</td>
+							<td>Eclipse, Octopus Deploy, Adobe Illustrator, Git</td>
+						</tr>
+						<tr>
+							<td>General Knowledge <small>(used sparingly or used extensively but haven’t used in a while)</small></td>
+							<td>AngularJS and AngularJS 2, MVC, Objective-C, PowerShell, PHP, Swift,  MySQL, Linux, PostgreSQL, Visual Basic, PowerShell, ASP, Java</td>
+							<td>CVS, SVN, SourceSafe</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		
 	</section>
+	</div>
+	<div class="row" id="orgs">
+		<section class="col-xs-12" >
+			<h1 >Organizations</h1>
+			<ul>
+				<li><h4>Society of Louisiana CPAs</h4></li>
+				<li>
+					<h4>National Association of Watch &amp; Clock Collectors</h4>
+				</li>
+			</ul>	
+		</section>
+	</div>
+	<div class="row">
+		<section class="col-xs-12">
+			<h1 id="hobbies">Hobbies</h1>
+			<ul>
+				<li><h4>Photography</h4></li>
+				<li>
+					<h4>Antique Clock Restoration</h4>
+				</li>
+				<li>
+					<h4>Camping</h4>
+				</li>
+			</ul>	
+		</section>
 	</div>
 </div>
 <script src="js/jquery-2.1.4.min.js"></script>
