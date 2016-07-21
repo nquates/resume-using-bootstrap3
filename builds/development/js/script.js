@@ -63,15 +63,6 @@ $( "#edatadetails,#antaresdetails,#finance_details,#accounting_details,#oilgas_d
 	return true;
  });
 
-var $, fill;
-
-$ = require('jquery', 'bootstrap');
-
-(fill = function(item) {
-  return $('.tagline').append("" + item);
-})('Now seeking new challenging position.');
-
-fill;
 
 },{"jquery":2}],2:[function(require,module,exports){
 /*eslint-disable no-unused-vars*/

@@ -1,3 +1,5 @@
+
+
 var gulp = require('gulp')
     logutil = require('gulp-tracer'),
     coffee = require('gulp-coffee'),
@@ -5,20 +7,38 @@ var gulp = require('gulp')
     browserify = require('gulp-browserify'),
     connect = require('gulp-connect'),
     cleanCSS = require('gulp-clean-css'),
-    concatCss = require('gulp-concat-css');
+    concatCss = require('gulp-concat-css')
+    gulpif = require('gulp-if'),
+    uglify = require('gulp-uglify');
+
  
 var  coffeeSrcs
 	,jsSrcs
 	,htmlSrcs
 	,styleSrcs
-	,cssSrcs;
+	,cssSrcs
+	,env
+	,outputDir
+	,sourceDevDir;
+
+sourceDevDir = 'builds/development/';
+
+env = process.env.NODE_ENV || 'dev';
+
+
+if (env === 'dev'){
+	outputDir = 'builds/development/';
+}
+else {
+	outputDir = 'builds/production/';
+}
 
 coffeeSrcs = ['components/coffee/*.coffee'];
 jsSrcs = [
 	'components/scripts/*.js'
 ];
-htmlSrcs = ['builds/development/*.html'];
-styleSrcs = ['builds/development/css/styles.css'];
+htmlSrcs = [sourceDevDir + '*.html'];
+styleSrcs = [sourceDevDir + 'css/styles.css'];
 cssSrcs = ['components/css/_base.css','components/css/special.css'];
 
 gulp.task('log',function(){
@@ -37,7 +57,8 @@ gulp.task('js',function(){
 		.pipe(concat('script.js')
 			.on('error',logutil.log))
 		.pipe(browserify())
-		.pipe(gulp.dest('builds/development/js'))
+		.pipe(gulpif(env==='prod',uglify()))
+		.pipe(gulp.dest(outputDir + 'js'))
 		.pipe(connect.reload())
 });
 
@@ -57,7 +78,7 @@ gulp.task('css', function() {
   	   .pipe(concatCss('styles.css'))
        .pipe(gulp.dest('components/css'))
      .pipe(cleanCSS())
- 	    .pipe(gulp.dest('builds/development/css'))
+ 	    .pipe(gulp.dest(outputDir + 'css'))
  	  .pipe(connect.reload());
 });
 
@@ -71,7 +92,7 @@ gulp.task('watch',function(){
 
 gulp.task('connect',function(){
 	connect.server({
-		root: "builds/development/",
+		root: outputDir ,
         port: 8080,
         livereload: true
 	})
