@@ -9,12 +9,16 @@ var gulp = require('gulp')
     cleanCSS = require('gulp-clean-css'),
     concatCss = require('gulp-concat-css')
     gulpif = require('gulp-if'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    minifyHtml = require('gulp-minify-html'),
+    imagemin = require('gulp-imagemin'),
+    pngcrush = require('imagemin-pngcrush');
 
  
 var  coffeeSrcs
 	,jsSrcs
 	,htmlSrcs
+	,imgSrcs
 	,styleSrcs
 	,cssSrcs
 	,env
@@ -38,6 +42,18 @@ jsSrcs = [
 	'components/scripts/*.js'
 ];
 htmlSrcs = [sourceDevDir + '*.html'];
+imgSrcs = [sourceDevDir + 'images/AntaresLogoThumb.png',
+			sourceDevDir + 'images/bankOne.png',
+			sourceDevDir + 'images/CPACert.png',
+			sourceDevDir + 'images/Deloitte.png',
+			sourceDevDir + 'images/EdataLogoThumb.png',
+			sourceDevDir + 'images/FirstCommerceCorpLogo.png',
+			sourceDevDir + 'images/MS_Cert_Professional_logo.png',
+			sourceDevDir + 'images/nsu.png',
+			sourceDevDir + 'images/Patent.png',
+			sourceDevDir + 'images/tchfunctesunset.jpg',
+			sourceDevDir + 'images/uno.png'];
+
 styleSrcs = [sourceDevDir + 'css/styles.css'];
 cssSrcs = ['components/css/_base.css','components/css/special.css'];
 
@@ -64,8 +80,21 @@ gulp.task('js',function(){
 
 gulp.task('html', function(){
 	gulp.src(htmlSrcs)
+		.pipe(gulpif(env==='prod',minifyHtml()))
+		.pipe(gulpif(env==='prod',gulp.dest(outputDir)))
 		.pipe(connect.reload())
 });
+
+gulp.task('images',function(){
+	gulpif(env==='prod',gulp.src(imgSrcs)
+		.pipe(imagemin({
+			progressive: true,
+			use: [pngcrush()]
+		}))
+		.pipe(gulp.dest(outputDir + 'images')))
+	
+});
+
 /*
 gulp.task('style', function(){
 	gulp.src(styleSrcs)
@@ -98,5 +127,5 @@ gulp.task('connect',function(){
 	})
 });
 
-gulp.task('default',['html','css','coffee','js','connect','watch']);
+gulp.task('default',['html','images','css','coffee','js','connect','watch']);
 
