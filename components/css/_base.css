@@ -21,8 +21,12 @@ body{
 	color:white;
 }
 header address a {
-	color: aqua;
+	color: #33aab7;
 	text-decoration: underline;
+}
+#linkedinprofile{
+	color: #33aab7;
+	text-decoration: underline; 
 }
 /*override the bootstrap default grey colors for collapsable accordins*/
 #edata_projects .panel-default > .panel-heading{
@@ -70,6 +74,7 @@ a.accordian-control.collapsed {
 	img.othIndus {
 		width: auto;
 	}
+
 }
 @media (min-width: >992px){
 	img.othIndus {

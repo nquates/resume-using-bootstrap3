@@ -5,7 +5,7 @@ $( "#brand" ).click(function() {
   $( "#hamburger" ).click();
 });
 
-/* when the navbar is using the hamberger icon collapse after each use.*/
+/* when the navbar is using the hamburger icon collapse after each use.*/
 $(function () { 
         $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function () { 
                 $('.navbar-toggle:visible').click(); 
@@ -32,7 +32,7 @@ $('#skillsMI,#orgsMI').click(function(e){
 
 $( "#edatadetails,#antaresdetails,#finance_details,#accounting_details,#oilgas_details" ).click(function(e){
 	e.preventDefault();
-	/*go through the list and collapse all of the other acordins*/
+	/*go through the list and collapse all of the other accordions*/
 	var targetList = ['#edatadetails','#antaresdetails','#finance_details','#accounting_details','#oilgas_details'];
 	for (var i = targetList.length - 1; i >= 0; i--) {
 		var starget = targetList[i];
@@ -49,7 +49,7 @@ $( "#edatadetails,#antaresdetails,#finance_details,#accounting_details,#oilgas_d
 			}
 		}
 	}
-	/*now smoothly scrool down to selected target and toggle the acordion */
+	/*now smoothly scrool down to selected target and toggle the accordions */
 	var target = this.hash;
     var $target = $(target);
     $('html, body').stop().animate({

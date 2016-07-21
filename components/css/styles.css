@@ -23,7 +23,12 @@ body {
 }
 
 header address a {
-  color: aqua;
+  color: #33aab7;
+  text-decoration: underline;
+}
+
+#linkedinprofile {
+  color: #33aab7;
   text-decoration: underline;
 }
 
