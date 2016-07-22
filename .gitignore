@@ -5,3 +5,4 @@ node_modules
 builds/**/images/*
 *.min.js
 *.txt
+builds/production/*
