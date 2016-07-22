@@ -9,6 +9,11 @@ body{
 	width:100%;
 	z-index: 1000;
 }
+
+li.dropdown-header{
+	color:#bbb;
+	font-size:15px;
+}
 .bgimage{
 	background-image: url('../images/tchfunctesunset.jpg') ;
 	background-position: center center;

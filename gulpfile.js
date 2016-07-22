@@ -52,6 +52,7 @@ imgSrcs = [sourceDevDir + 'images/AntaresLogoThumb.png',
 			sourceDevDir + 'images/nsu.png',
 			sourceDevDir + 'images/Patent.png',
 			sourceDevDir + 'images/tchfunctesunset.jpg',
+			sourceDevDir + 'images/meThumb.png',
 			sourceDevDir + 'images/uno.png'];
 
 styleSrcs = [sourceDevDir + 'css/styles.css'];
