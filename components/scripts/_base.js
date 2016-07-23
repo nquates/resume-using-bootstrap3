@@ -58,6 +58,6 @@ $( "#edatadetails,#antaresdetails,#finance_details,#accounting_details,#oilgas_d
 	var $subtarget = $(subtarget);
 	$subtarget.addClass('in');
 	$subtarget.removeAttr('style');
-	$target.click();
+	//$target.click();
 	return true;
  });
