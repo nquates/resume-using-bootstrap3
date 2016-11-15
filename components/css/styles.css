@@ -23,8 +23,29 @@ li.dropdown-header {
   min-height: 210px;
 }
 
+.experience {
+  margin-bottom: 3px;
+  font-size: 1.1EM;
+}
+
+.noimage {
+  background-color: rgb(241, 241, 241);
+  background-position: center center;
+  background-size: cover;
+  min-height: 210px;
+}
+
+.homeaddress {
+  margin-bottom: 5px;
+}
+
+blockquote {
+  margin: 8px 4px;
+  font-size: 1.1EM;
+}
+
 .bgtextcolor {
-  color: white;
+  color: rgb(44, 101, 116);
 }
 
 header address a {

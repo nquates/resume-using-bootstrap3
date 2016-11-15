@@ -13,7 +13,7 @@
 		data-spy="scroll"
 		data-target=".navbar-default"
 		data-offset="100">
-<header class="bgimage">
+<header >
 	 <nav class="navbar navbar-default"
 	 	data-spy="affix"
 	 	data-offset-top="170">
@@ -37,17 +37,10 @@
 			          	aria-haspopup="true"
 			          	aria-expanded="false">Experience<span class="caret"></span></a>
 			          <ul class="dropdown-menu">
-			            <li class="dropdown-header">Software Related</li>
-			            <li role="separator" class="divider"></li>
-			            <li><a href="#edata_experience_toggle" id="edatadetails">Edata Axcess</a></li>
-			            <li><a href="#antares_experience_toggle" id="antaresdetails">Antares</a></li>
-			            <li role="separator" class="divider"></li>
-			            <li class="dropdown-header">Other Industries</li>
-			            <li role="separator" class="divider"></li>
-			            <li><a href="#finance_toggle" id="finance_details">Finance</a></li>
-			            <li><a href="#accounting_toggle" id="accounting_details">Accounting</a></li>
-			            <li><a href="#oilgas_toggle" id="oilgas_details">Oil &amp; Gas</a></li>
-			          </ul>
+			            <li><a href="#edata_experience" id="edatadetails">Edata Axcess</a></li>
+			            <li><a href="#antares_experience" id="antaresdetails">Antares</a></li>
+
+			              </ul>
 			        </li>
 					<li class="dropdown">
 			          <a href="#" class="dropdown-toggle"
@@ -56,13 +49,13 @@
 			          	aria-haspopup="true"
 			          	aria-expanded="false">Knowledge<span class="caret"></span></a>
 			          <ul class="dropdown-menu">
-			            <li><a href="#education">Education</a></li>
-			            <li><a href="#certs">Certifications</a></li>
-			            <li><a href="#pats">Patents</a></li>
-			            <li><a href="#training">Recent Training</a></li>
+			            <li><a href="#education" id="edu">Education</a></li>
+			            <li><a href="#certifications" id="crt">Certifications</a></li>
+			            <li><a href="#patents" id="pat">Patents</a></li>
+			            <li><a href="#training" id="trn">Recent Training</a></li>
 			          </ul>
 			        </li>
-					<li><a href="#skills" id="skillsMI">Skills<span class="caret"></span></a></li>
+					<li><a href="#softwareskills" id="skillsMI">Skills<span class="caret"></span></a></li>
 					<li><a href="#orgs" id="orgsMI">Organizations &amp; Hobbies<span class="caret"></span></a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
@@ -79,247 +72,81 @@
 	    </div>
 	 </nav>
 
-	<div class="container bgtextcolor">
-		<div class="row">
-			<div class="col-sm-6 col-xs-12">
-				<h1>Norman Quates</h1>
-				<h4>Resume/Demo web site utilizing bootstrap&nbsp;3</h5>
-				<br/>
-				<a href="http://www.linkedin.com/in/norman-quates-8931b96"
-					target="_blank"
-					id="linkedinprofile"
-					title="Norman Quates | LinkedIn">View LinkedIn Profile</a>
-			</div><!-- col -->
-			<div class="col-sm-6 col-xs-12">
-				<div class="visible-lg-inline visible-md-inline visible-sm-inline">
-					<h2>&nbsp;</h2>
-				</div>
-				<address>119 Fairway Dr. Covington, La 70433<br/>
-					<a href="mailto:nquates@gmail.com">nquates@gmail.com</a><br/>
-					985-502-4161
-					<br/>
-
-				</address>
-			</div><!-- col -->
-		</div><!-- row -->
-		<div class="row">
-			<div class="visible-lg-inline visible-md-inline visible-sm-inline">
-				<div class="col-sm-6">
-					&nbsp;
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div>Now seeking a new challenging position</div>
-			</div>
-		</div><!-- row -->
-	</div><!-- container -->
+	  <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          &nbsp;
+        <div class="jumbotron">
+      				<h1>Norman Quates</h1>
+      				<h4>Software Development Manager</h4>
+      				<address class=homeaddress>119 Fairway Dr. Covington, La 70433<br/>
+      					<a href="mailto:nquates@gmail.com">nquates@gmail.com</a><br/>
+      					Phone: 985-502-4161
+      				</address>
+              <a href="http://www.linkedin.com/in/norman-quates-8931b96"
+      					target="_blank"
+      					id="linkedinprofile"
+      					title="Norman Quates | LinkedIn">View LinkedIn Profile</a>
+                  <ul class="list-inline">
+                    <li><h4><span class="glyphicon glyphicon-ok"></span> Software Engineering</h4></li>
+                    <li><h4><span class="glyphicon glyphicon-ok"></span> Business Management</h4></li>
+                    <li><h4><span class="glyphicon glyphicon-ok"></span> Accounting</h4></li>
+                    <li><h4><span class="glyphicon glyphicon-ok"></span> Project Management</h4></li>
+                    <li><h4><span class="glyphicon glyphicon-ok"></span> Business Intelligence</h4></li>
+                  </ul>
+        </div><!--jumbotron -->
+        </div>
+      </div> <!-- row -->
+	  </div><!-- container -->
  </header>
  <div class="container">
 	<div class="row">
 		<section class="col-xs-12">
-			<h1 id="objectives">Objectives</h1>
-			<blockquote>Seeking local senior management position with a company to manage its information resources (personnel, etc.) where I can use my experience to make that company run more efficient, while making its &quot;online&quot; presence effective, reliable and easy to use.  <br/><br/>Alternatively, looking to work with an organization looking to take control of laborious and time-consuming tasks by doing its own programming and web development or by bringing those tasks in-house.</blockquote>
+			<h3 id="objectives">Objectives</h3>
+			<blockquote>I have spent my entire professional career aligning business needs with software solutions. My strong background in management, software development, and accounting, coupled with a keen understanding of issues facing today's business managers, have sharpened my communication skills, and allowed me to become a first-rate liaison between stakeholders and software teams. I have developed web applications used by tens of thousands of commercial clients to store and access data on millions of records that are secure, easy to use, and highly customizable.<br/><br/>I am actively seeking new and challenging opportunities, either as a direct hire doing full time work or through my consulting company Edata Axcess LLC. </blockquote>
 		</section>
 	</div><!-- row -->
 	<div class="row">
 		<section class="col-xs-12">
-			<h1 id="experience">Experience</h1>
-			<ul>
-				<li class="h3">Software Related</li>
+			<h3 id="experience">Experience</h3>
 
 					<div class="panel-group" id="softwareRelated"
 						 role="tablist" ariamultiselectable="true">
-						<div class="panel panel-default" ID="edata_panel-default">
+						<div id="edata_experience" class="panel panel-default" ID="edata_panel-default">
 							<div class="panel-heading" role="tab" id="panel_edata_heading">
 								<h4 class="panel-title" >
-									<div class="container" >
-										<div class="row">
+									<div  class="container" >
+										<div  class="row">
 											<div class="col-sm-4">
 												<img src="images/EdataLogoThumb.png" class="" alt="Edata Logo">
 											</div>
 											<div class="col-sm-7">
-												<p>Edata Axcess LLC specializes in Custom Software, Database Design and Analysis, IT Consulting, Data Security and Network Design, and Web Application Hosting.
+												<p>Edata Axcess LLC specializes in developing custom commercial quality software. Our software has been used by many of the largest oil and gas companies in the world.
 												</p>
-												<div class="container">
-													<div class="row">
-														<div class="col-xs-6 col-sm-5 col-md-4">
-															Owner / Manager: (2004 - present)
-															<!-- <div class="visible-lg-inline visible-md-inline visible-sm-inline">&nbsp;</div> -->
-														</div>
-														<div class="col-xs-3 col-sm-1 col-md-1">
-															<a href="#edata_experience"
-																 role="button"
-																 class="btn btn-default btn-sm accordian-control"
-																 data-toggle="collapse"
-																 data-parent="#softwareRelated"
-																 aria-expanded="false"
-																 aria-controls="edata_experience"
-																 id="edata_experience_toggle">
-																<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-
-															 </a>
-														 </div>
-													 </div><!-- row -->
-												 </div><!-- container -->
+                        <p>Founder / CEO (2004 - present)</p>
 											 </div>
 										 </div>
 									 </div>
 								</h4><!-- panel-title -->
 							</div><!-- end of panel_edata_heading -->
-							<div class="panel-collapse collapse " id="edata_experience">
+							<div >
 								<div class="panel-body" id=panel-body-edata-experience">
-									<div class="panel-group" id="edataBullets" role="tablist" ariamultiselectable="true">
-										<div class="panel panel-default">
-											<div class="panel-heading" >
-												<h4 class="panel-title">
-													Website: <a href="http://www.edaxc.com/" class="intentionalHL" target="_blank" title="Edata Axcess LLC">www.edaxc.com</a>
-												</h4>
-											</div><!-- panel-heading -->
-										</div> <!-- panel panel-default -->
-										<div class="panel panel-default">
-											<div class="panel-heading" >
-												<h4 class="panel-title">
-													Most of my time spent working for my two largest clients
-													<br/>PEC Safety (<a href="http://pecsafety.com/" class="intentionalHL" target="_blank" title="PEC Safety | Contractor Management, Pre-Qualification, Safety Training, SafeLandUSA, SafeGulf">www.pecsafety.com</a>)
-													 and BP U.S. (<a href="http://www.bp.com/en_us/bp-us.html" class="intentionalHL" target="_blank" title="BP U.S.">www.bpamerica.com</a>).
-												</h4>
-											</div><!-- panel-heading -->
-										</div> <!-- panel panel-default -->
-
-										<div class="panel panel-default">
-											<div class="panel-heading" >
-												<h4 class="panel-title">
-													Managed developer teams of two to twelve persons.  At other times, have been the sole developer on projects.
-												</h4>
-											</div><!-- panel-heading -->
-										</div> <!-- panel panel-default -->
-
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="full_stack_heading">
-												<h4 class="panel-title">True "Full Stack" Development
-													<a href="#full_stack_one" role="button"
-														class="btn btn-default btn-sm accordian-control"
-														data-toggle="collapse" data-parent="#edataBullets" ariaexpanded="false"
-														ariacontrols="full_stack_one">
-													<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-													</a>
-												</h4>
-											</div><!-- panel-heading -->
-											<div class="panel-collapse collapse " id="full_stack_one" role="tabpanel" arialabeledby="major_projects_heading">
-												<div class="panel-body">
-													<ul>
-														<li>From: setup and maintenance of web and application hosting using our own servers and on cloud based Amazon web services.</li>
-														<li>To: the design and development of entire web applications.</li>
-														<li>Designed efficient SQL databases that made analysis, entry, and retrieval of the data easy and straightforward.
-														<ul>
-															<li>With some tables having record counts in the millions, I insist on two second query time limits.</li>
-														</ul>
-														</li>
-														<li>Created and continue to upgrade several desktop applications, web services, windows services, and do graphics work when necessary.</li>
-													</ul>
-												</div><!-- panel-body full stack -->
-											</div><!-- full_stack_one -->
-										</div> <!-- panel panel-default full stack-->
-										<div class="panel panel-default">
-											<div class="panel-heading" >
-												<h4 class="panel-title">
-													Setup procedures and standards that, when adhered to, make the work-flow fast, accountable and reliable.
-												</h4>
-											</div><!-- panel-heading -->
-										</div> <!-- panel panel-default -->
-										<!-- Major Projects -->
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="major_projects_heading">
-												<h4 class="panel-title">
-													Major Projects
-													<a href="#major_projects_one" role="button"
-														class="btn btn-default btn-sm accordian-control"
-														data-toggle="collapse"
-														data-parent="#edataBullets" ariaexpanded="false"
-														ariacontrols="major_projects_one">
-													<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-													</a>
-												</h4>
-											</div><!-- panel-heading -->
-											<div class="panel-collapse collapse " id="major_projects_one" role="tabpanel" arialabeledby="major_projects_heading">
-												<div class="panel-body">
-													<div class="panel-group" id="edata_projects"
-														role="tablist" ariamultiselectable="true">
-														<div class="panel panel-default">
-															<div class="panel-heading" role="tab" id="edata_projects_heading_one">
-																<h4 class="panel-title">
-																	<abbr title="PEC Safety">PEC</abbr>: Standard Safety Questionnaire (SSQ)
-																	<a href="#edata_projects_one" role="button"
-																		class="btn btn-default btn-xs accordian-control"
-																		data-toggle="collapse" data-parent="#edata_projects" ariaexpanded="false"
-																		ariacontrols="edata_projects_one"><span class="caret"></span>
-																	</a>
-																</h4>
-															</div><!-- panel-heading -->
-															<div class="panel-collapse collapse " id="edata_projects_one" role="tabpanel" arialabeledby="edata_projects_heading_one">
-																<div class="panel-body">
-																	<blockquote><small>Online Web Application: C#.NET/SQL Server: where "Oil and Gas" operators and contractors share safety, health, and environmental statistics and policies with current data entered regularly by over 22K contractors.
-																	</small></blockquote>
-																</div><!-- panel-body -->
-															</div><!-- panel-collapse collapse  -->
-															<div class="panel-heading" role="tab" id="edata_projects_heading_two">
-																<h4 class="panel-title"><abbr title="PEC Safety">PEC</abbr>: Training Tracker
-																	<a href="#edata_projects_two" role="button"
-																		class="btn btn-default btn-xs accordian-control"
-																		data-toggle="collapse" data-parent="#edata_projects" ariaexpanded="false"
-																		ariacontrols="edata_projects_two">
-
-																	<span class="caret"></span>
-																	</a>
-																</h4>
-															</div><!-- panel-heading -->
-															<div class="panel-collapse collapse " id="edata_projects_two" role="tabpanel" arialabeledby="edata_projects_heading_two">
-																<div class="panel-body">
-																	<blockquote><small>Online Web Application: C#.NET/SQL Server: tracking 9.4 Million+ employee training records for contractors on over 800K individuals.</small>
-																	</blockquote>
-																</div><!-- panel-body -->
-															</div><!-- panel-collapse collapse -->
-															<div class="panel-heading" role="tab" id="edata_projects_heading_three">
-																<h4 class="panel-title"><abbr title="PEC Safety">PEC</abbr>: Document Management System
-																	<a href="#edata_projects_three" role="button"
-																		class="btn btn-default btn-xs accordian-control"
-																		data-toggle="collapse" data-parent="#edata_projects" ariaexpanded="false"
-																		ariacontrols="edata_projects_three">
-
-																	<span class="caret"></span>
-																	</a>
-																</h4>
-															</div><!-- panel-heading -->
-															<div class="panel-collapse collapse " id="edata_projects_three" role="tabpanel" arialabeledby="edata_projects_heading_three">
-																<div class="panel-body">
-																	<blockquote><small>Online Web Application: C#.NET/SQL Server: used by contractors and operators for securely archiving and sharing document images related to the <abbr title="Standard Safety Questionnaire">SSQ</abbr> and Training Tracker. Currently houses more than 675K documents from 20K companies.</small>
-																	</blockquote>
-																</div><!-- panel-body -->
-															</div><!-- panel-collapse collapse -->
-															<div class="panel-heading" role="tab" id="edata_projects_heading_four">
-																<h4 class="panel-title">BP: Hours/Mileage and Safety Observation Tracking System
-																	<a href="#edata_projects_four" role="button"
-																		class="btn btn-default btn-xs accordian-control"
-																		data-toggle="collapse" data-parent="#edata_projects" ariaexpanded="false"
-																		ariacontrols="edata_projects_four">
-
-																	<span class="caret"></span>
-																	</a>
-																</h4>
-															</div><!-- panel-heading -->
-															<div class="panel-collapse collapse " id="edata_projects_four" role="tabpanel" arialabeledby="edata_projects_heading_four">
-																<div class="panel-body">
-																	<blockquote> <small> Built and hosted Edata's "Online Response Management System" that BP used from 2007 - 2016 to monitor contractor's hours and mileage for safety reporting purposes. Added many customizations and reporting features for BP over the years. BP also used this system to track contractor hours for the Gulf Coast Recovery Organization they formed to manage environmental cleanup after the oil spill in 2010.</small>
-																	</blockquote>
-																</div><!-- panel-body -->
-															</div><!-- panel-collapse collapse -->
-
-														</div><!-- edata projects panel-default -->
-													</div><!-- panel-group edata projects -->
-												</div><!-- panel-body-major projects -->
-											</div><!-- major_projects_one collapsed -->
-										</div><!-- panel-default major projects -->
-									</div><!-- end of panel-group edata bullets -->
+                  <ul>
+						      <li class="experience">
+                    Started Edata as a consulting company to provide software development services, where I managed teams of up to twelve professionals.
+                  </li>
+                  <li class="experience">Our services were centered around two main clients: PEC Safety and BP America.
+                  </li>
+                  <li class="experience">
+                    I was the chief software architect and the senior software developer for PEC for more than 12 years. I designed, developed,  maintained, and hosted systems for PEC that let oil & gas operators gather millions of data points across time to track, rate, and predict health, safety, and environmental (HSE) performance statistics. The software systems that I designed and developed have allowed PEC to expand its business ten-fold and respond quickly to environmental and regulatory changes that affected PEC and its clients.
+                  </li>
+                  <li class="experience">
+									  I designed, developed, maintained, and hosted systems for BP America to track safety related statistics with data entered by its contractors which BP utilized for over eight years.
+									</li>
+                  <li class="experience">
+									  Setup development procedures and standards that, make the work-flow fast, accountable and reliable.
+									</li>
+                  </ul>
 								</div><!-- panel-body-edata-experience -->
 							</div><!-- end of collapsed edata_experience -->
 						</div><!-- edata_panel-default -->
@@ -335,167 +162,26 @@
 											<div class="col-sm-7">
 												<p>Antares Technology Solutions: Software Development and Consulting company based in Baton Rouge, LA.
 												</p>
-												<div class="container">
-													<div class="row">
-														<div class="col-xs-6 col-sm-5 col-md-4">
-															Senior Developer: (1999 - 2004)
-															<!-- <div class="visible-lg-inline visible-md-inline visible-sm-inline">&nbsp;</div> -->
-														</div>
-														<div class="col-xs-3 col-sm-1 col-md-1">
-															<a href="#antares_experience"
-																 role="button"
-																 class="btn btn-default btn-sm accordian-control"
-																 data-toggle="collapse"
-																 data-parent="#softwareRelated"
-																 aria-expanded="false"
-																 aria-controls="antares_experience"
-																 id="antares_experience_toggle">
-																 <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-															 </a>
-														 </div>
-													 </div><!-- row -->
-												 </div><!-- container -->
-											 </div>
+                        <p>Senior Developer: (1999 - 2004)</p>
+											</div>
 										 </div><!-- row -->
 									 </div><!-- container -->
 								</h4><!-- panel-title -->
 							</div><!-- panel_antares_heading -->
-							<div class="panel-collapse collapse" id="antares_experience">
+							<div  id="antares_experience">
 								<div class="panel-body" id="panel-body-antares-experience">
-									<div class="panel-group" id="parentGroupMajorProjects" role="tablist" ariamultiselectable="true">
-										<div class="panel panel-default" ID="panel-default-MajorProjects">
-											<div class="panel-heading" role="tab" id="panel_major_projects_heading">
-												<h4 class="panel-title">Major Projects
-													<a href="#collapsed_target_major_projects"
-														 role="button"
-														 class="btn btn-default btn-sm accordian-control"
-														 data-toggle="collapse"
-														 data-parent="#parentGroupMajorProjects"
-														 aria-expanded="false"
-														 aria-controls="collapsed_target_major_projects">
-														<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-													 </a>
-												</h4><!--  end of panel-title -->
-											</div><!--  end of panel_major_projects_heading -->
-											<div class="panel-collapse collapse in" id="collapsed_target_major_projects">
-												<div class="panel-body" id="panel-major_projects-body">
-													<div class="panel-group" id="panel-group-Antares-Projects" role="tablist" ariamultiselectable="true">
-														<div class="panel panel-default" ID="panel-default-antares-projects_1">
-															<div class="panel-heading" role="tab" id="panel_1_heading">
-																<h4 class="panel-title">Saks Incorporated: Server Information Tracking System
-																	<a href="#collapsed_target_projects_1"
-																		 role="button"
-																		 class="btn btn-default btn-xs accordian-control"
-																		 data-toggle="collapse"
-																		 data-parent="#panel-group-Antares-Projects"
-																		 aria-expanded="false"
-																		 aria-controls="collapsed_target_projects_1">
+                <ul>
+                  <li class="experience">
+                  Worked as a software developer on projects for Chase Mortgage, Thinkstream, Sacks Incorporated, and PEC Safety.
+                </li>
+                  <li class="experience">
+                    My skills were utilized as an analyst for Audubon Insurance where I helped them choose the best "Business Intelligence" vendor to fit their needs by building data models using Brio, Cognos, Business Objects, and a few others using their data. I then analyzed how each compared to Audubon's in house systems.
+                  </li>
+                  <li class="experience">
+                    I operated as the project manager, team leader, software architect, and developer on a long-term project for First Intermark that completely revamped all of their information systems. We moved them from obsolete technologies that very few programmers could maintain to a system that was faster, more reliable, and could be maintained by any modern programmer.
+                  </li class="experience">
+                </ul>
 
-																			<span class="caret"></span>
-
-																	 </a>
-																</h4><!--  end of panel-title -->
-															</div><!--  end of panel_1_heading -->
-															<div class="panel-collapse collapse" id="collapsed_target_projects_1">
-																<div class="panel-body" id="panel-1-body">
-																	Intra-net web application: C#.NET/SQL Server: Project manager and lead developer. Team of three for the development of a system for tracking over 600 servers nationwide.
-																</div><!-- end of panel-1-body -->
-															</div><!-- end of collapsed collapsed_target_projects_1 -->
-														</div><!-- end of panel-default-antares-projects_1-->
-														<div class="panel panel-default" ID="panel-default-antares-projects-2">
-															<div class="panel-heading" role="tab" id="panel_2_heading">
-																<h4 class="panel-title" id="panel-2-title">First Intermark: Follow up Sales System
-																	<a href="#collapsed_target_projects_2"
-																		 role="button"
-																		 class="btn btn-default btn-xs accordian-control"
-																		 data-toggle="collapse"
-																		 data-parent="#panel-group-Antares-Projects"
-																		 aria-expanded="false"
-																		 aria-controls="collapsed_target_projects_2">
-
-																			<span class="caret"></span>
-
-																	 </a>
-																</h4><!--  end of panel-2-title -->
-															</div><!--  end of panel_2_heading -->
-															<div class="panel-collapse collapse" id="collapsed_target_projects_2">
-																<div class="panel-body" id="panel-2-body">Suite of applications developed in VB.NET/SQL Server: Project manager and lead developer of a team of up to 12 personnel that provided a total system redesign for a post-sale consumer follow-up marketing system for First Intermark Corporation.  The design specifications included order entry, process work-flow, tracking, billing, customer relations, and shipping systems.
-																</div><!--  end of panel-2-body -->
-															</div><!--  end of collapsed collapsed_target_projects_2 -->
-														</div><!--  end of panel-default-antares-projects-2 -->
-														<div class="panel panel-default" ID="panel-default-antares-projects-3">
-															<div class="panel-heading" role="tab" id="panel_3_heading">
-																<h4 class="panel-title">Audubon Insurance (AIG): Executive Information System
-																	<a href="#collapsed_target_projects_3"
-																		 role="button"
-																		 class="btn btn-default btn-xs accordian-control"
-																		 data-toggle="collapse"
-																		 data-parent="#panel-group-Antares-Projects"
-																		 aria-expanded="false"
-																		 aria-controls="collapsed_target_projects_3">
-
-																			<span class="caret"></span>
-
-																	 </a>
-																</h4><!--  end of panel-title -->
-															</div><!--  end of panel_3_heading -->
-															<div class="panel-collapse collapse" id="collapsed_target_projects_3">
-																<div class="panel-body" id="panel-3-body">Provided analysis and design and implementation services for an Executive Information System for a large insurance company.  The goals of the project included the need to provide executives, managers, and staff with direct on-line access to production information in a useful and navigable format.  The system needed to gather production information with minimal interruption to daily and monthly operational requirements.
-																</div><!-- end of panel-3-body -->
-															</div><!-- end of collapsed collapsed_target_projects_3 -->
-														</div><!-- end of panel-default-antares-projects-3 -->
-
-														<div class="panel panel-default" ID="panel-default-antares-projects-4">
-															<div class="panel-heading" role="tab" id="panel_4_heading">
-																<h4 class="panel-title" id="panel-4-title">Thinkstream: Enterprise Information Portal
-																	<a href="#collapsed_target_projects_4"
-																		 role="button"
-																		 class="btn btn-default btn-xs accordian-control"
-																		 data-toggle="collapse"
-																		 data-parent="#panel-group-Antares-Projects"
-																		 aria-expanded="false"
-																		 aria-controls="collapsed_target_projects_4">
-
-																			<span class="caret"></span>
-
-																	 </a>
-																</h4><!--  end of panel-4-title -->
-															</div><!--  end of panel_4_heading -->
-															<div class="panel-collapse collapse" id="collapsed_target_projects_4">
-																<div class="panel-body" id="panel-4-body">Part of a team working on new internet technologies which include e-commerce, enterprise information portal (EIP) and digital content management internet applications.  Technology focusing on the next-generation e-commerce network.  Developed Java programs used in data mining.
-																</div><!--  end of panel-4-body -->
-															</div><!--  end of collapsed collapsed_target_projects_4 -->
-														</div><!--  end of panel-default-antares-projects-4 -->
-
-														<div class="panel panel-default" ID="panel-default-antares-project-5">
-															<div class="panel-heading" role="tab" id="panel_5_heading">
-																<h4 class="panel-title" id="panel-5-title">Chase: Assumption Loan Tracking System
-																	<a href="#collapsed_target_project_5"
-																		 role="button"
-																		 class="btn btn-default btn-xs accordian-control"
-																		 data-toggle="collapse"
-																		 data-parent="#panel-group-Antares-Projects"
-																		 aria-expanded="falsE"
-																		 aria-controls="collapsed_target_project_5">
-
-																			<span class="caret"></span>
-
-																	 </a>
-																</h4><!--  end of panel-5-title -->
-															</div><!--  end of panel_5_heading -->
-															<div class="panel-collapse collapse" id="collapsed_target_project_5">
-																<div class="panel-body" id="panel-5-body">Created an application in Microsoft Access designed to track the paperwork process for assumptions of qualified and non-qualified loans as well as special research requests.  The system also gave Chase the ability to create reports on their own using access.  The program included a work-flow approach so the different loans could be tracked in unique processing queues.
-																</div><!-- end of panel-5-body -->
-															</div><!-- end of collapsed collapsed_target_project_5 -->
-														</div><!-- end of panel-default-antares-project-5 -->
-
-													</div><!-- " end of panel-group panel-group-Antares-Projects" -->
-
-												</div><!-- end of panel-major_projects-body -->
-											</div><!-- end of collapsed collapsed_target_major_projects -->
-										</div><!-- end of panel-default-MajorProjects -->
-
-									</div><!-- " end of panel-group parentGroupMajorProjects" -->
 								</div><!-- panel-body-antares-experience -->
 							</div><!-- collapsed antares_experience -->
 
@@ -504,286 +190,126 @@
 						</div><!-- antares-panel-default -->
 					</div><!-- "panel-group softwareRelated" -->
 
-				<li class="h3">Other Industries</li>
-					<div class="panel-group" id="panel_group_other_ind" role="tablist" ariamultiselectable="true">
-						<div class="panel panel-default" ID="panel_default_finance">
-							<div class="panel-heading" role="tab" id="panel_finance_heading">
-								<div class="container">
-									<div class="row">
-										<div class="col-sm-2">
-											<h4 class="panel-title" id="panel_finance_title">Finance
-											</h4><!--  end of panel_finance_title -->
-										</div>
-										<div class="col-sm-2" >
-												<a href="#collapsed_target_finance"
-													 id="finance_toggle"
-													 role="button"
-													 class="btn btn-default btn-xs accordian-control"
-													 data-toggle="collapse"
-													 data-parent="#panel_group_other_ind"
-													 aria-expanded="false"
-													 aria-controls="collapsed_target_finance">
-													<strong>
-														<span class="caret"></span>
-													</strong>
-												 </a>
-										</div><!-- col -->
-
-									</div><!-- row -->
-								</div><!-- container -->
-							</div><!--  end of panel_finance_heading -->
-							<div class="panel-collapse collapse" id="collapsed_target_finance">
-								<div class="panel-body" id="panel_finance_body">
-									 <div class="container">
-										<div class="row">
-											<div class="col-sm-3">
-												<img class="othIndus" src="images/bankOne.png" alt="BankOne Logo" >
-
-											</div>
-											<div class="col-sm-9 othIndus">
-												<p>Bank One Corporation was the sixth-largest bank in the United States. It traded on the New York Stock Exchange under the stock symbol ONE. The company merged with JPMorgan Chase & Co. 2004.</p>
-												Credit Administration/MIS Manager for Louisiana (1998-1999)<br/><br/>
-
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-xs-6" style="border-top: 1px dotted grey; width:89%;">&nbsp;
-
-											</div>
-											<div class="col-xs-6"></div>
-										</div>
-										<div class="row">
-											<div class="col-sm-3">
-												<img class="othIndus "src="images/FirstCommerceCorpLogo.png" alt="First Commerce Corp Logo" >
-											</div>
-											<div class="col-sm-9 othIndus">
-												<p>
-													First Commerce Corporation was, at the time, the largest multi-bank holding company in Louisiana. Its primary holding was First National Bank of Commerce in New Orleans. First Commerce merged with BankOne in June of 1998. Last position was Manager of the Risk Management/Credit MIS department, managing a team that provided analysis and reporting for the Board of Directors, Chief Operating Officer, Chief Credit Officer, and other senior officers and managers as requested.
-												</p>
-												Vice President Credit MIS (1991-1998)
-
-											</div>
-										</div>
-									 </div>
-								</div><!-- end of panel_finance_body -->
-							</div><!-- end of collapsed collapsed_target_finance -->
-						</div><!-- end of panel_default_finance -->
-						<div class="panel panel-default" ID="panel_default_accounting">
-							<div class="panel-heading" role="tab" id="panel_accounting_heading">
-								<div class="container">
-									<div class="row">
-										<div class="col-sm-2">
-											<h4 class="panel-title" id="panel_accounting_title">Accounting
-											</h4><!--  end of panel_accounting_title -->
-										</div>
-										<div class="col-sm-2">
-											<a href="#collapsed_target_accounting"
-												 id="accounting_toggle"
-												 role="button"
-												 class="btn btn-default btn-xs accordian-control"
-												 data-toggle="collapse"
-												 data-parent="#panel_group_other_ind"
-												 aria-expanded="false"
-												 aria-controls="collapsed_target_accounting">
-												<strong>
-													<span class="caret"></span>
-												</strong>
-											 </a>
-										</div>
-									</div><!-- row -->
-								</div><!-- container -->
-							</div><!--  end of panel_accounting_heading -->
-							<div class="panel-collapse collapse" id="collapsed_target_accounting">
-								<div class="panel-body" id="panel_accounting_body">
-									<div class="container">
-										<div class="row">
-											<div class="col-sm-3">
-									<img src="images/Deloitte.png" alt="Deloitte Logo" style="width:150px;">
-											</div>
-											<div class="col-sm-9 othIndus" >
-												<p><u>Deloitte &amp; Touche</u>, now known simply as&nbsp;<u>Deloitte</u>, was in 1991 considered one of the global "Big Six" accounting firms. Employed with Deloitte for a single tax season in 1991 preparing tax returns for commercial clients.</p>
-												Tax Accountant (1991)
-											</div>
-										</div>
-									</div>
-								</div><!--  end of panel_accounting_body -->
-							</div><!--  end of collapsed collapsed_target_accounting -->
-						</div><!--  end of panel_default_accounting -->
-						<div class="panel panel-default" ID="panel_default_oilgas">
-							<div class="panel-heading" role="tab" id="panel_oilgas_heading">
-								<div class="container">
-									<div class="row">
-										<div class="col-sm-2">
-											<h4 class="panel-title" id="panel_oilgas_title">Oil &amp; Gas
-											</h4><!--  end of panel_oilgas_title -->
-										</div>
-										<div class="col-sm-2">
-											<a href="#collapsed_target_oilgas"
-												 id="oilgas_toggle"
-												 role="button"
-												 class="btn btn-default btn-xs accordian-control"
-												 data-toggle="collapse"
-												 data-parent="#panel_group_other_ind"
-												 aria-expanded="false"
-												 aria-controls="collapsed_target_oilgas">
-												<strong>
-													<span class="caret"></span>
-												</strong>
-											 </a>
-										</div><!-- col-sm-2 -->
-									</div><!-- row -->
-								</div><!-- container -->
-							</div><!--  end of panel_oilgas_heading -->
-							<div class="panel-collapse collapse" id="collapsed_target_oilgas">
-								<div class="panel-body" id="panel_oilgas_body">
-									<p>As manager and part owner of a group of oilfield service companies, duties covered several roles over the years: management, sales, recruitment, programming, supervision, accounting, purchasing, inventory control, maintenance, equipment design, machine work, dispatch, crane operation, marine maintenance, and many other roles necessary to keep up to 150 employees (seasonally) working profitably.</p>
-									Vice President: Operations. (1979 - 1989)
-								</div><!--  end of panel_oilgas_body -->
-							</div><!--  end of collapsed collapsed_target_oilgas -->
-						</div><!--  end of panel_default_oilgas -->
-					</div><!-- " end of panel-group panel_group_other_ind" -->
-			</ul>
 		</section>
 	</div><!-- row -->
 	<div class="row">
 		<section class="col-xs-12">
-		<h1 id="education">Education, Certifications, Patents, Training</h1>
+		<h3 id="education">Education</h3>
 		<div class="container">
 			<div class="row certifications">
-				<div class="col-sm-3">
+				<div class="col-sm-2">
 					<img class="img-responsive" src="images/uno.png" alt="UNO LOGO">
 
 				</div>
-				<div class="col-sm-8"><h4>University of New Orleans</h4>
+				<div class="col-sm-10"><h4>University of New Orleans</h4>
 					UNO campus New Orleans, Louisiana
-					<br/>1990 Bachelor's degree in Accounting with a concentration in Finance
+					<br/>Bachelor's degree in Accounting with a concentration in Finance
 				</div>
 			</div>
+    </div>
+    <h3 id="certifications">Certifications</h3>
+    <div class="container">
+			<div class="row certifications" >
 
-			<div class="row certifications" id="certs">
-				<div class="col-sm-3">
-					<img class="img-responsive" src="images/nsu.png" alt="NSU logo">
-				</div>
-				<div class="col-sm-8"><h4>Nicholls State University</h4>
-					NSU campus Thibodaux, Louisiana
-					<br/>1979 Associate's degree in Business Administration
-				</div>
-			</div>
-			<div class="row certifications" id="pats">
-				<div class="col-sm-3">
-					<img class="img-responsive" src="images/CPAcert.png" alt="cpa certificate">
-				</div>
-				<div class="col-sm-8">
-					<h4>Certified Public Accountant</h4>
+				<div class="col-sm-12">
+					<h3>Certified Public Accountant</h3>
 					1992 CPA Certificate issued by State Board of Certified Public Accountants of Louisiana. Current Status: Registered, Inactive.
 				</div>
 			</div>
-			<div class="row certifications">
-				<div class="col-sm-3">
-					<img class="img-responsive" src="images/MS_Cert_Professional_logo.png" alt="MCP logo">
+    </div>
+    <div class="container">
+    	<div class="row certifications">
+				<div class="col-sm-2">
+					<img class="img-responsive" src="images/MS_Cert_Professional_logo.png" alt="MCP logo" style="margin-left:-10px;">
 				</div>
-				<div class="col-sm-8"><h4>Microsoft Certified Professional</h4>
+				<div class="col-sm-10"><h4>Microsoft Certified Professional</h4>
 					MCP issued in 2005 for Developing and Implementing Web Applications with Microsoft Visual C#™ .NET and Microsoft Visual Studio .NET
 				</div>
 			</div>
+    </div>
+    <h3 id="patent">Patents</h3>
+    <div class="container">
 			<div class="row certifications" id="training">
-				<div class="col-sm-3">
-					<img class="img-responsive" src="images/patent.png" alt="patent image">
-				</div>
-				<div class="col-sm-8">
-					<h4>United States Patent</h4>
-					 Received US patent for a device that is used to fill bulk abrasive blasting pressure vessels by temporarily converting the pressure vessel into a vacuum system. Information on the patent can be found at google patent site:
+
+				<div class="col-sm-12">
+					<h4>United States Patent #4511291</h4>
+					 When I was involved in the offshore oil and gas services industry, were were hindered by the size of abrasive blasting pressure vessels that could be used on marine vessels.  We needed a way to use bulk quantities of abrasives. I designed, built, and tested prototypes until I had a device that would solve the problem. This system temporarily converted bulk abrasive blasting pressure vessels into vacuum vessels that could draw abrasives from bulk containers for refilling. This reduced the crew size by 35 percent.  Abrasive material costs were lowered by using bulk truck loads. We increased productivity by more than 200 percent by reducing downtime waiting on the refills of the small abrasive pressure vessels. Information on the patent can be found at google patent site:
 					 <a href="http://www.google.com/patents/US4511291" target="_blank" title="Norman Quates Patent Vacuum Material conveying apparatus">www.google.com/patents/US4511291</a>
 				</div>
 			</div>
-			<div class="row certifications" id="training">
-				<div class="col-sm-3">
-					<h4>Recent Training Certificates</h4>
-				</div>
-				<div class="col-sm-8">
-					Links to recent training course completion certificates are on my <a href="http://www.linkedin.com/in/norman-quates-8931b96" target="_blank" title="Norman Quates | LinkedIn">LinkedIn</a> profile which can be found at the following address: <a href="http://www.linkedin.com/in/norman-quates-8931b96" target="_blank" title="Norman Quates | LinkedIn">www.linkedin.com/in/norman-quates-8931b96</a>
+    </div>
+    <h3 id="Training">Training</h3>
+    <div class="container">
+    	<div class="row certifications" id="training">
+
+				<div class="col-sm-12">
+          <p class="training">
+            In order to stay current with emerging technologies I have been taking advantage of online training services such as Lynda.com, Pluralsight, Code School and others. I have completed more than 35 software related courses from Lynda.com and about 24 courses from Pluralsight. I have completed 40 of these courses in 2016 alone.
+          </p>
+          <p class="training">
+            Recently, I have taken advantage of extra time away from consulting, to work on training and applying this training to real projects. I am finding that many of the frameworks, and languages that I avoided in the past are actually enjoyable. The structure and simplicity provided by tools like "Ruby on Rails", "React and Redux", and even MVC, are making my life easier and more organized.
+          </p>
+          <p class="training">
+            Now that I have taken the time to learn in-depth, the foundations and fundamentals of many of the development tools and techniques that I had learned in the past only "by example", I can now use tools like MVC with confidence, and without the prejudices that were hindering me in the past. I have details on the software related training courses on my <a href="http://www.linkedin.com/in/norman-quates-8931b96" target="_blank" title="Norman Quates | LinkedIn">LinkedIn</a> profile which can be found at the following address: <a href="http://www.linkedin.com/in/norman-quates-8931b96" target="_blank" title="Norman Quates | LinkedIn">www.linkedin.com/in/norman-quates-8931b96</a>
+          </p>
 				</div>
 			</div>
+    </div>
+    <h3 id="softwareskills">Software Skills</h3>
+    <div class="container">
+    	<table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Languages / Environments / Frameworks / Tools</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Expert</td>
+          <td>C#, .NET, SQL Server, ASP.NET, Web Application Design, CSS, Reporting, Visual Studio, TFS, Photoshop, InDesign</td>
+        </tr>
+        <tr>
+          <td>Extensive Knowledge</td>
+          <td>Ajax, JavaScript, Bootstrap, jQuery, jQueryUI, LINQ, RESTful APIs, UI/UX design, Business Intelligence Systems, PHP, WCF Web Services, Multi-threaded Windows Services, Eclipse, Adobe Illustrator, Git, Microsoft Ofice, OSX, Windows, Linux</td>
+        </tr>
+        <tr>
+          <td>General Knowledge</td>
+          <td>AngularJS, MVC, Objective-C, PowerShell, Swift,  MySQL, PostgreSQL, Flex, Flash, Visual Basic, ASP, ES6, Java EE 7, Spring Boot, Spring MVC, Docker, Aurelia, Ruby on Rails, React, Redux, Flux, Webpack, Gulp, Maven, Octopus Deploy, CVS, SVN, SourceSafe</td>
+        </tr>
+      </table>
+  </div>
 
 		</section>
 	</div>
-	<div class="row">
-	<section class="col-xs-12">
-		<h1 id="skills">Skills</h1>
-			<div class="row">
-				<div class="col-xs-1">
-					&nbsp;
-				</div>
-				<div class="col-xs-11">
-					<ul class="list-inline">
-						<li><h4><span class="glyphicon glyphicon-ok"></span> Software</h4></li>
-						<li><h4><span class="glyphicon glyphicon-ok"></span> Business Management</h4></li>
-						<li><h4><span class="glyphicon glyphicon-ok"></span> Accounting</h4></li>
-						<li><h4><span class="glyphicon glyphicon-ok"></span> Project Management</h4></li>
-						<li><h4><span class="glyphicon glyphicon-ok"></span> Reporting</h4></li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-1">
-				</div>
-				<div class="col-xs-11">
-					<h3>Software Skill levels:</h3>
-					<table class="table table-bordered">
-						<thead>
-							<tr>
-								<th>Level</th>
-								<th>Language / Environment / Framework Skills</th>
-								<th>Tools / IDE / Source Control</th>
-							</tr>
-						</thead>
-						<tr>
-							<td>Expert</td>
-							<td>C#, .NET, SQL Server, ASP.NET, Web Application Design, CSS, Building Custom Analytical and Reporting Tools </td>
-							<td>Visual Studio, TFS, Photoshop, InDesign</td>
-						</tr>
-						<tr>
-							<td>Extensive Knowledge</td>
-							<td>Ajax, JavaScript, Bootstrap, jQuery, jQueryUI, RESTful APIs, UI/UX design, PHP, WCF Web Services, Multi-threaded Windows Services</td>
-							<td>Eclipse, Octopus Deploy, Adobe Illustrator, Git</td>
-						</tr>
-						<tr>
-							<td>General Knowledge</td>
-							<td>AngularJS, MVC, Objective-C, PowerShell, Swift,  MySQL, Linux, PostgreSQL, Flex, Visual Basic, ASP, Java</td>
-							<td>CVS, SVN, SourceSafe</td>
-						</tr>
-					</table>
-				</div>
-			</div>
 
-	</section>
-	</div>
+
+
+
+
 	<div class="row" id="orgs">
 		<section class="col-xs-12" >
-			<h1 >Organizations</h1>
+			<h3 >Organizations</h3>
 			<ul>
-				<li><h4>Society of Louisiana CPAs</h4></li>
+				<li><h5>Society of Louisiana CPAs</h5></li>
 				<li>
-					<h4>National Association of Watch &amp; Clock Collectors</h4>
+					<h5>National Association of Watch &amp; Clock Collectors</h5>
 				</li>
 			</ul>
 		</section>
 	</div>
 	<div class="row">
 		<section class="col-xs-12">
-			<h1 id="hobbies">Hobbies</h1>
+			<h3 id="hobbies">Hobbies</h3>
 			<ul>
-				<li><h4>Photography</h4></li>
+				<li><h5>Photography</h5></li>
 				<li>
-					<h4>Antique Clock Restoration</h4>
+					<h5>Antique Clock Restoration</h5>
 				</li>
 				<li>
-					<h4>Camping</h4>
+					<h5>Camping</h5>
 				</li>
 				<li>
-					<h4>
-						Weather Tracking
-					</h4>
+					<h5>Weather Tracking</h5>
 				</li>
 			</ul>
 		</section>
@@ -834,7 +360,7 @@
 				I put more <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> items in this site than I would normally put in a resume so readers can see how a simple one page site can show summary information, and also quickly show detailed information on any aspect of interest.
 			</p>
 			<p>
-			Everything in this site is as accurate as I can ascertain. Please send me an email on LinkedIn with comments as this is my first resume since 1999.  I have this on GitHub:&nbsp;<a href="https://github.com/nquates/resume-using-bootstrap3" target="">https://github.com/nquates/resume-using-bootstrap3</a>&nbsp;as well and would welcome comments on my web techniques.
+  			Everything in this site is as accurate as I can ascertain. Please send me an email on LinkedIn with comments as this is my first resume since 1999.  I have this on GitHub:&nbsp;<a href="https://github.com/nquates/resume-using-bootstrap3" target="">https://github.com/nquates/resume-using-bootstrap3</a>&nbsp;as well and would welcome comments on my web techniques.
 			</p>
 			<p>
 				This site is very responsive to different browser environments and was created with a mobile first strategy.  I will be making another similar site incorporating angularJS and will add a link when that site is ready.

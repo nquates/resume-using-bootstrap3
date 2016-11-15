@@ -20,10 +20,28 @@ li.dropdown-header{
 	background-size: cover;
 	min-height: 210px;
 
-}	
-	
+}
+.experience{
+	margin-bottom:3px;
+	font-size: 1.1EM;
+}
+.noimage{
+	background-color:rgb(241, 241, 241) ;
+	background-position: center center;
+	background-size: cover;
+	min-height: 210px;
+}
+.homeaddress{
+	margin-bottom: 5px;
+}
+
+blockquote{
+	margin: 8px 4px;
+	font-size: 1.1EM
+}
+
 .bgtextcolor{
-	color:white;
+	color:rgb(44, 101, 116);
 }
 header address a {
 	color: #33aab7;
@@ -31,7 +49,7 @@ header address a {
 }
 #linkedinprofile{
 	color: #33aab7;
-	text-decoration: underline; 
+	text-decoration: underline;
 }
 /*override the bootstrap default grey colors for collapsable accordins*/
 #edata_projects .panel-default > .panel-heading{
@@ -57,7 +75,7 @@ a.accordian-control.collapsed {
 
 
 .logoThumbnail {
-	max-width: 225px; 
+	max-width: 225px;
 }
 .panel-title > .intentionalHL{
 	color: #337ab7;
@@ -70,12 +88,12 @@ a.accordian-control.collapsed {
 	}
 	img.othIndus {
 		width: 99%;
-		
+
 	}
-	
+
 }
 @media (min-width: < 768px){
-	
+
 	img.othIndus {
 		width: auto;
 	}
@@ -86,11 +104,11 @@ a.accordian-control.collapsed {
 		width: auto;
 
 	}
-	
+
 }
 
 #panel_edata_heading, #panel_antares_heading {
-	background-color:transparent; 
+	background-color:transparent;
 }
 
 .certifications{
